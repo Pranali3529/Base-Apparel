@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  >
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: left;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-image: url(images/bg-pattern-desktop.svg), linear-gradient(to bottom right, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+      background-size: 1030px 700px;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item-1">
+      <img class="logo" src="images/logo.svg" alt="">
+    </div>
+    <div class="right">
+      <img class="flex-item-4" src="images/hero-desktop.jpg">
+      <img class="flex-item-5" src="images/hero-mobile.jpg">
+    </div>
+    <div class="flex-item-2">
+      <h1>WE'RE</h1>
+      <h2>COMING <br> SOON</h2>
+      <p>Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    </div>
+    <div class="flex-item-3">
+      <input type="email" name="Email Address" placeholder="Email Address" value="text" focus onclick="this.value=''">
+      <input type="image" id="error" src="images/icon-error.svg" alt="error-icon">
+      <button type="button" name="button" onclick="togglekey()">
+        <image class="img-btn" src="images/icon-arrow.svg" alt=">">
+      </button>
+      <br>
+      <span id="btn">Please provide valid email id.</span>
+
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Pranali Hunnargikar</a>.
+    </p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function togglekey() {
+      $("input").css("border-color", "hsl(0, 93%, 68%)");
+      $("#error").toggle();
+      $("span").toggle();
+
+    }
+  </script>
+</body>
+
+</html>

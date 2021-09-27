@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+ overflow: hidden;
+  box-sizing: border-box;
+}
+button {
+  transition-duration: 0.4s;
+}
+button:hover {
+  background: hsl(0, 36%, 70%);
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+}
+#btn {
+  color: hsl(0, 93%, 68%);
+  padding-left: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  display: none;
+
+}
+@media screen and (min-width: 500px) {
+.flex-item-5 {
+  display: none;
+}
+.flex-item-4 {
+  margin-top: 0;
+  padding-right: 0;
+  margin-right: 0;
+  float: right;
+  height: 684px;
+}
+.logo {
+  padding: 80px 100px;
+  float: left;
+  margin-left: 100px;
+}
+.flex-item-2 {
+  padding-left: 150px;
+  padding-top: 0px;
+}
+.flex-item-3 {
+  padding: 30px 100px 10px;
+  margin-left: 70px;
+  margin-bottom: 0px;
+  width: 400px;
+  height: 50px;
+
+}
+#error {
+  display: none;
+  position: fixed;
+  top: 490px;
+  left: 450px;
+  z-index: 1;
+}
+input[type=email] {
+
+  width: 80%;
+  height: 30px;
+  border-style: solid;
+  border-radius: 40px;
+  border-color:  hsl(0, 36%, 70%);
+  padding: 10px 20px;
+  color:  hsl(0, 36%, 70%);
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+button {
+  position: fixed;
+  margin-left: -50px;
+  padding: 0px 20px 0px;
+  width: 80px;
+  height: 55px;
+  border-radius: 40px;
+  border: 50px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  color: white;
+  box-shadow: 0 8px 16px 0 hsl(0, 80%, 86%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+h1 {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  font-weight: 700;
+  color: hsl(0, 36%, 70%);
+  letter-spacing: 20px;
+  padding-top: 200px;
+  padding-left: 30px;
+
+}
+h2 {
+    margin: 0;
+    width: 10%;
+    padding-left: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 20px;
+    color: hsl(0, 6%, 24%);
+    line-height: 1.12;
+}
+p {
+  height: 100%;
+  width: 30%;
+  padding-left: 30px;
+  font-weight: 300;
+  color:  hsl(0, 36%, 70%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0px;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+   .flex-container  {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+   }
+   .flex-item-1 {
+     margin: 0;
+     padding: 0 20px 0;
+  }
+  .flex-item-3 {
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+  .flex-item-4 {
+    display: none;
+  }
+   .flex-item-5 {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+   }
+
+  h1 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 40px;
+   font-style: italic;
+   color: hsl(0, 36%, 70%);
+   line-height: 44px;
+   text-align: center;
+
+  }
+  h2 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 40px;
+   color: hsl(0, 6%, 24%);
+   line-height: 1;
+   letter-spacing: 6px;
+   text-align: center;
+  }
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 14px;
+   color: hsl(0, 36%, 70%);
+   line-height: 20px;
+   text-align: center;
+  }
+
+  input[type=email] {
+    width: 75%;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: hsl(0, 6%, 80%);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: hsl(0, 6%, 24%);
+  }
+  .img-btn {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+
+  }
+#error {
+    display: none;
+    position: fixed;
+    top: 620px;
+    left: 250px;
+    z-index: 1;
+  }
+  button {
+    width: 18%;
+    padding: 0;
+    position: fixed;
+    left: 290px;
+    border-radius: 40px;
+    border: 50px;
+    background: Linear-Gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: white;
+    box-shadow: 0 8px 16px 0 hsl(0, 80%, 86%);
+  }
+
+}
